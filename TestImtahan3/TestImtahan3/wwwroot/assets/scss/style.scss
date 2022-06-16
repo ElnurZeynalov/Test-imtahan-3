@@ -1,0 +1,326 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.header-logo {
+    display: inline-block;
+    border: 2px solid black !important;
+    a {
+        padding: 10px;
+        font-weight: 600;
+        font-size: 32px;
+        color: black;
+        text-decoration: none;
+         :hover {
+            background-color: black;
+        }
+    }
+}
+
+.menu-btn {
+    border: 0;
+    background-color: transparent;
+    z-index: 99;
+    i {
+        padding: 10px;
+        font-size: 24px;
+        transition: all 0.1s;
+        box-sizing: border-box;
+    }
+     :hover {
+        font-size: 26px;
+    }
+}
+
+.menu-x-btn {
+    border: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    background-color: transparent;
+    z-index: 99;
+    font-size: 42px;
+}
+
+.nav-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    nav {
+        ul {
+            li {
+                list-style: none;
+                line-height: 40px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#intro {
+    height: 100vh;
+    background-image: url("/assets/image/intro.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.247);
+        .intro-title {
+            font-size: 72px;
+            font-weight: 500;
+            color: white;
+        }
+        .intro-btn {
+            a {
+                padding: 15px 60px;
+                font-weight: 500;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 2px solid white;
+                border-radius: 5px;
+                transition: all 0.4s;
+                font-size: 14px;
+                letter-spacing: 3px;
+            }
+            a:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+#about {
+    padding: 80px 0;
+    background-color: rgb(236, 236, 236);
+    .about-title {
+        font-size: 48px;
+        text-align: center;
+    }
+    .about-text {
+        font-size: 18px;
+        padding: 20px 0;
+        text-align: center;
+        color: rgb(197, 197, 197);
+    }
+    .about-card {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 30px 0;
+    }
+    .about-card-img {
+        height: 100%;
+        width: 100%;
+        background-image: url(/assets/image/about.webp);
+        background-size: 100% 100%;
+    }
+    .about-card-subtitle {
+        line-height: 40px;
+        color: orange;
+        font-weight: bold;
+    }
+    .about-card-title {
+        line-height: 60px;
+        font-size: 22px;
+    }
+    .about-card-text {
+        line-height: 30px;
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+        color: rgb(179, 179, 179);
+        padding: 7px 0;
+    }
+    .about-card-btn {
+        margin-top: 50px;
+        a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+        }
+    }
+}
+
+#about-our {
+    padding: 80px 0;
+    h1 {
+        padding: 30px 0;
+    }
+    p {
+        padding: 20px 0;
+        font-size: 20px;
+        color: rgb(158, 158, 158);
+    }
+    .about-our-img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#chef {
+    padding: 80px 0;
+    .chef-img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .chef-name {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+    .chef-position {
+        color: rgb(204, 204, 204);
+        font-size: 20px;
+    }
+    .chef-comment {
+        padding: 10px 0;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(146, 146, 146);
+        letter-spacing: 1.5px;
+        line-height: 35px;
+    }
+    .chef-social-medias {
+        padding: 10px 0;
+        a {
+            text-decoration: none;
+            i {
+                padding: 10px 30px;
+                color: orange;
+            }
+        }
+    }
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.text {
+    font-size: 20px;
+    color: rgb(146, 146, 146);
+    text-align: center;
+}
+
+#menu {
+    padding: 80px 0;
+    .menu-filters {
+        text-align: center;
+        padding: 60px;
+        .filter {
+            display: inline-block;
+            margin: 10px;
+            font-weight: 600;
+            font-size: 18px;
+            color: rgb(94, 94, 94);
+            border-bottom: 2px solid rgb(194, 194, 194);
+        }
+        .active {
+            color: orange;
+            border-color: orange;
+        }
+    }
+    .menu-item {
+        padding: 30px 0;
+        border-bottom: 1px dotted lightblue;
+    }
+    .menu-item-image {
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .menu-item-content {
+        position: relative;
+        .menu-item-name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .menu-item-description {
+            font-size: 18px;
+            color: rgb(146, 146, 146);
+            padding-right: 60px;
+            letter-spacing: 1.5px;
+        }
+        .menu-item-price {
+            color: orange;
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+#service {
+    padding: 80px 0;
+    .services-card {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .services-card-icon {
+        i {
+            font-size: 70px;
+            padding: 10px 0;
+        }
+    }
+    .services-card-title {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+    .services-card-description {
+        width: 70%;
+        font-size: 18px;
+        color: rgb(146, 146, 146);
+        margin: auto;
+    }
+}
+
+#reservation {
+    padding: 80px 0;
+    .reservation-form {
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.2);
+    }
+    .reservation-btn {
+        float: right;
+        margin: 10px;
+    }
+}
